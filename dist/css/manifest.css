@@ -1,1 +1,77 @@
-
+html {
+  height:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  width:100% !important;
+}
+body {
+  height:100% !important;
+  margin:0 !important;
+  padding:0 !important;
+  width:100% !important;
+}
+.main-table-wrapper {
+  width: 100%;
+  margin:0 auto;
+  height: 100%;
+  padding:0;
+  background: #1c233d;
+}
+.main-table {
+  margin:0 auto;
+  padding:0;
+  width: 600px;
+  max-width: 600px;
+  font-family: Verdana, sans-serif;
+}
+.main-background {
+  background: #19203A;
+}
+.rademade-background {
+  background-image: url(https://rademade.com/email-imgs/rademade.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-img {
+  width: 100%;
+  border: 0;
+  padding: 0;
+  outline: 0;
+}
+img.main-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  padding: 0;
+  outline: 0;
+}
+.main-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #FFFFFF;
+}
+.main-text--green {
+  color: #1FC881;
+}
+.main-text--medium {
+  font-size: 20px;
+}
+.main-text--dark {
+  color: #8189A7;
+}
+.main-text--large {
+  font-size: 31px;
+  font-weight: bold;
+}
+.main-title {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.7;
+  color: #FFFFFF;
+}
+.main-link {
+  color: #1FC881;
+  font-size: 18px;
+  line-height: 1.7;
+}

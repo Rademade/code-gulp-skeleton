@@ -1,18 +1,616 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html style="height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Page: Home</title>
-    <link rel="stylesheet" href="css/manifest.css"/>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+      @media only screen and (max-width: 600px) {
+        .mobile-view_mod {
+          display: block;
+          width: 100% !important;
+        }
+        .mobile-view-padding_mod{
+          padding: 10px 0;
+        }
+        .mobile-view_mod.item tbody {
+          display: block;
+          width: 100% !important;
+        }
+        .mobile-padding {
+          padding: 10px;
+        }
+        .mobile-hide_mod {
+          display: none !important;
+        }
+        .main-table {
+          width: 100% !important;
+        }
+        .mobile-view-img_mod {
+          max-width: 100% !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+      
+      .main-text {
+        font-size: 16px!important;
+      }
+      
+      .main-link {
+        font-size: 16px!important;
+      }
+      
+      .main-text--medium {
+        font-size: 18px !important;
+      }
+      
+      .main-text--large {
+        font-size: 26px!important;
+      }
+    </style>
   </head>
-  <body>
-    <div class="svg-sprite" id="svg-sprite" style="position: absolute; width: 0; height: 0; z-index: -1; opacity: 0;"></div>
-    <p>Home Page Content</p>
-    <svg>
-      <use xlink:href="#profile"></use>
-    </svg>
-    <script src="js/load-svg-sprite.js"></script>
+  <body style="height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;">
+    <table class="main-table-wrapper" border="0" cellpadding="0" cellspacing="0" bgcolor="#1c233d" valign="top" align="center" style="background: #1c233d; height: 100%; margin: 0 auto; padding: 0; width: 100%;">
+      <tr>
+        <td valign="top" align="center">
+          <table class="main-table main-background" width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#19203A" style="background: #19203A; font-family: Verdana, sans-serif; margin: 0 auto; max-width: 600px; padding: 0; width: 600px;">
+            <tr>
+              <td style="width: 100%;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#19203A" style="margin:0;padding:0;">
+                  <tr>
+                    <td width="100%" style="width: 100%">
+                      <table class="main-table" width="100%" style="font-family: Verdana, sans-serif; margin: 0 auto; max-width: 600px; padding: 0; width: 100%;">
+                        <tr>
+                          <td class="main-img" style="border: 0; outline: 0; padding: 0; width: 100%;"><img class="main-img" src="https://rademade.com/email-imgs/head.png" width="100%" style="border: 0; display: block; height: auto; outline: 0; padding: 0; width: 100%;"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent">
+                      <table width="14" height="14" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%">
+                      <table width="100%" style="width: 100%" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="main-title" style="color: #FFFFFF; font-size: 26px; font-weight: bold; line-height: 1.7;"><span class="main-title" style="color: #FFFFFF; font-size: 26px; font-weight: bold; line-height: 1.7;">Hello Buckley,</span></td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%">
+                      <table width="100%" style="width: 100%" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="main-text main-text--green" style="color: #1FC881; font-size: 16px !important; line-height: 1.7;"><span class="main-text main-text--green" style="color: #1FC881; font-size: 16px !important; line-height: 1.7;">time flies and soon we will celebrate a New Year and are looking forward to working on new plans and accomplishing lofty goals.</span></td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent">
+                      <table width="14" height="14" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%" valign="top">
+                      <table width="100%" style="width: 100%" valign="top" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent">
+                            <table width="5" height="5" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="main-img" width="100%" style="border: 0; outline: 0; padding: 0; width: 100%;"><img class="main-img" width="100%" src="https://rademade.com/email-imgs/snow-1.png" style="border: 0; display: block; height: auto; outline: 0; padding: 0; width: 100%;"></td>
+                          <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent">
+                            <table width="5" height="5" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="rademade-background" width="100%" style="background-image: url(https://rademade.com/email-imgs/rademade.png); background-repeat: no-repeat; background-size: contain; width: 100%;">
+                      <table class="main-table" width="100%" style="font-family: Verdana, sans-serif; margin: 0 auto; max-width: 600px; padding: 0; width: 100%;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td>
+                            <table class="main-table" width="100%" style="font-family: Verdana, sans-serif; margin: 0 auto; max-width: 600px; padding: 0; width: 100%;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                  <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="100%" style="width: 100%">
+                                  <table width="100%" style="width: 100%" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                        <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr class="mobile-hide_mod">
+                                            <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                        <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td class="main-text" style="color: #FFFFFF; font-size: 16px !important; line-height: 1.7;"><span class="main-text" style="color: #FFFFFF; font-size: 16px !important; line-height: 1.7;">The New Year is a great time to reflect and look back on what has happened and look forward for what’s to come.</span></td>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                        <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                        <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr class="mobile-hide_mod">
+                                            <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                  <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="100%" style="width: 100%" valign="top">
+                                  <table width="100%" style="width: 100%" valign="top" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent">
+                                        <table width="5" height="5" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td class="main-img" width="100%" style="border: 0; outline: 0; padding: 0; width: 100%;"><img width="100%" src="https://rademade.com/email-imgs/snow-2.png"></td>
+                                      <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent">
+                                        <table width="5" height="5" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                  <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="100%" style="width: 100%">
+                                  <table width="100%" style="width: 100%" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                        <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr class="mobile-hide_mod">
+                                            <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                        <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td class="main-text" style="color: #FFFFFF; font-size: 16px !important; line-height: 1.7;"><span class="main-text" style="color: #FFFFFF; font-size: 16px !important; line-height: 1.7;">
+                                          For Rademade it was a year of changes.  In 2019 we became, bigger,
+                                          faster and more powerful. We became a group of companies&nbsp;<a class="main-link" href="https://iternal.group/" target="_blank" style="color: #1FC881; font-size: 16px !important; line-height: 1.7;">ITernal Group</a>&nbsp;that offers not only on software development but also M&A,
+                                          R&D and Real estate. In a nutshell, we are capable to open R&D centres in Ukraine,
+                                          using our recruitment resources and own schools/universities.</span></td>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                        <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                        <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr class="mobile-hide_mod">
+                                            <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                  <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td width="100%" style="width: 100%" valign="top">
+                                  <table width="100%" style="width: 100%" valign="top" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent">
+                                        <table width="5" height="5" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                      <td class="main-img" width="100%" style="border: 0; outline: 0; padding: 0; width: 100%;"><img class="main-img" width="100%" src="https://rademade.com/email-imgs/snow-3.png" style="border: 0; display: block; height: auto; outline: 0; padding: 0; width: 100%;"></td>
+                                      <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent">
+                                        <table width="5" height="5" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                          <tr>
+                                            <td style="width: #{val}px;height:#{val}px;" width="5" height="5" bgcolor="transparent"></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                                  <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent">
+                      <table width="14" height="14" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%">
+                      <table width="100%" style="width: 100%" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="main-text main-text--dark" style="color: #8189A7; font-size: 16px !important; line-height: 1.7;"><span class="main-text main-text--dark" style="color: #8189A7; font-size: 16px !important; line-height: 1.7;">Please&nbsp;<a class="main-link" href="https://ufuture.com/the-joint-company-of-ufuture-and-insoft-partners-has-announced-rebranding-and-invested-in-two-it-businesses/" target="_blank" style="color: #1FC881; font-size: 16px !important; line-height: 1.7;">read this article</a>&nbsp;for the full story and don’t hesitate to contact us in case
+                              of any questions. We are very excited about our new capabilities
+                              and what this means for our clients and partners.</span></td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent">
+                      <table width="14" height="14" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%" valign="top">
+                      <table width="100%" style="width: 100%" valign="top" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="main-img" width="100%" valign="middle" align="center" style="border: 0; outline: 0; padding: 0; width: 100%;"><img class="main-img" width="100%" src="https://rademade.com/email-imgs/snow-4.png" style="border: 0; display: block; height: auto; outline: 0; padding: 0; width: 100%;"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%">
+                      <table width="100%" style="width: 100%" bgcolor="#141A33" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="main-text main-text--large main-text--green" width="100%" style="color: #1FC881; font-size: 26px !important; font-weight: bold; line-height: 1.7;"><span class="main-text main-text--large main-text--green" style="color: #1FC881; font-size: 26px !important; font-weight: bold; line-height: 1.7;">Thank you for being with us this year,</span></td>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="100" height="100" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="100" height="100" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="100" height="100" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%" valign="top">
+                      <table width="100%" style="width: 100%" valign="top" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="main-img" width="100%" valign="top" style="border: 0; outline: 0; padding: 0; width: 100%;"><img class="main-img" width="100%" src="https://rademade.com/email-imgs/snow-5.png" align="absbottom" style="border: 0; display: block; height: auto; outline: 0; padding: 0; width: 100%;"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent">
+                      <table width="14" height="14" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%">
+                      <table width="100%" style="width: 100%" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="main-text" style="color: #FFFFFF; font-size: 16px !important; line-height: 1.7;"><span class="main-text main-text--green" style="color: #1FC881; font-size: 16px !important; line-height: 1.7;">
+                              we truly appreciate having you in our community.
+                              We hope that your life will be filled with happiness, positive achievements and prosperity in the next year. We look forward to continue being your trusted partners in innovation and success.</span></td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent">
+                      <table width="14" height="14" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="width: #{val}px;height:#{val}px;" width="14" height="14" bgcolor="transparent"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%" valign="top">
+                      <table width="100%" style="width: 100%" valign="top" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="main-img" width="100%" style="border: 0; outline: 0; padding: 0; width: 100%;"><img class="main-img" width="100%" src="https://rademade.com/email-imgs/snow-6.png" style="border: 0; display: block; height: auto; outline: 0; padding: 0; width: 100%;"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%">
+                      <table width="100%" style="width: 100%" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="main-text" style="color: #FFFFFF; font-size: 16px !important; line-height: 1.7;"><span class="main-text main-text--medium" style="color: #FFFFFF; font-size: 18px !important; line-height: 1.7;">
+                              Please share with us your greatest accomplishments of 2019? What plans do you have for 2020?
+                              </span></td>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                            <table class="mobile-hide_mod" width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                              <tr class="mobile-hide_mod">
+                                <td class="mobile-hide_mod" style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="100%" style="width: 100%" valign="top">
+                      <table width="100%" style="width: 100%" valign="top" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td class="main-img" width="100%" style="border: 0; outline: 0; padding: 0; width: 100%;"><img class="main-img" width="100%" src="https://rademade.com/email-imgs/footer.png" style="border: 0; display: block; height: auto; outline: 0; padding: 0; width: 100%;"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent">
+                      <table width="15" height="15" style="display:block; width: #{val}px; height:#{val}px;" bgcolor="transparent" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="width: #{val}px;height:#{val}px;" width="15" height="15" bgcolor="transparent"></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
