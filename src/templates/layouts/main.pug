@@ -1,13 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-html(style="margin: 0; padding: 0; height: 100%" )
-  include ../elements/head
+<!doctype html>
 
-  body(style="margin: 0; padding: 0; height: 100%")
-    table.main-table-wrapper(border="0" cellpadding="0" cellspacing="0" bgcolor="#1c233d" valign="top" align="center")
-      tr
-        td(valign="top" align="center")
-          table.main-table.main-background(width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#19203A")
-            tr
-              td(style="width: 100%;")
-                table(border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#19203A" style="margin:0;padding:0;")
-                  block content
+block variables
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+    title Page: #{pageTitle || 'Default page title'}
+    link(rel="stylesheet" href="css/manifest.css")
+
+  body
+    div.svg-sprite#svg-sprite(style="position: absolute; width: 0; height: 0; z-index: -1; opacity: 0;")
+    block content
+
+
+    script(src="js/load-svg-sprite.js")
