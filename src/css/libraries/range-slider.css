@@ -1,0 +1,64 @@
+.irs--flat {
+  position: relative;
+  z-index: 1;
+  margin: 15px 0;
+  height: 3px;
+
+  .irs-handle {
+    width: 19px;
+    height: 19px;
+    background: var(--primary-color);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 4px 10px rgba(149, 179, 206, 0.25);
+    border-radius: 50%;
+
+    > i:first-child {
+      display: none;
+    }
+  }
+
+  .irs-bar {
+    top: 0;
+    height: 3px;
+    background: var(--primary-color);
+  }
+
+  .irs-line {
+    top: 0;
+    height: 3px;
+    background: #E6EBF1;
+    border-radius: 23px;
+  }
+  .irs-handle {
+    top: -8px;
+  }
+  .irs-min, .irs-max {
+    visibility: hidden !important;
+  }
+  .irs-from,
+  .irs-to {
+    top: 11px;
+    padding: 0;
+    visibility: visible !important;
+    background: none;
+    font-size: .625rem;
+    line-height: .84;
+    color: var(--primary-dark-color);
+    &:before {
+      display: none;
+    }
+  }
+
+  .irs-from {
+    left: 0!important;
+  }
+
+  .irs-to {
+    left: auto !important;
+    right: 0 !important;
+  }
+
+  .irs-single {
+    visibility: hidden !important;
+  }
+}

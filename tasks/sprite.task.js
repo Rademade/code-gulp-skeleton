@@ -3,7 +3,7 @@ import svgSprite                    from 'gulp-svg-sprite';
 import { DIST_DIR, ROOT_ICONS_DIR } from './helpers/variables';
 
 export const spriteTask = () => {
-  return src(ROOT_ICONS_DIR + '**/*.*')
+  return src(ROOT_ICONS_DIR + '**/*.svg')
     .pipe(svgSprite({
       mode: {
         stack: {

@@ -6,6 +6,6 @@ export const browserSyncTask = () => {
     open: false,
     server: {
       baseDir: DIST_DIR
-    }
+    },
   })
 };

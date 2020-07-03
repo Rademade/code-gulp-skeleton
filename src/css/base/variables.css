@@ -1,0 +1,10 @@
+@custom-media --viewport-mobile (width >= 23.75rem); /* 400 px*/
+@custom-media --viewport-tablet (width >= 34.375rem); /*550 px*/
+@custom-media --viewport-desktop (width >= 62rem); /*992 px*/
+
+:root {
+  --primary-color: #32C220;
+  --warning-color: #FFB143;
+  --danger-color: #FF2A84;
+  --secondary-color: #A7A8AF;
+}

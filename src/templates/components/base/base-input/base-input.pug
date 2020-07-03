@@ -1,0 +1,16 @@
+mixin base-input(settings)
+  -
+    const requiredClass = settings.required ? 'base-input--required': ''
+    const errorClass = settings.message ? 'base-input--error': ''
+    className = requiredClass + ' ' + errorClass
+
+  label.base-input(
+    class=className
+  )
+    span.base-input__data
+      span.base-input__label= settings.label
+      input.base-input__value(class=settings.className type=settings.type ? settings.type: 'text' placeholder=settings.placeholder value=settings.value ? settings.value: '')
+      svg.base-input__required-icon
+        use(href="#required")
+    if settings.message
+      span.base-input__message= settings.message

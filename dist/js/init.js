@@ -1,0 +1,19 @@
+$(function () {
+  initHomeSlider();
+  initNavCategoriesDropdown();
+  initNavCategories();
+  initCatalogViewSwitch();
+  initCatalogFilter();
+  initScrollToActiveTab();
+  initProductPreview();
+  initProductSlider();
+  initProductKit();
+  initBaseInput();
+  initModal();
+  initProductPhotoWidgetSlider();
+  initBaseSearch();
+  initBaseSmallSelect();
+  initBaseSelect();
+  initProfile();
+  initProductGiftSlider();
+});
